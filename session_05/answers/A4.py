@@ -4,24 +4,24 @@
 
 # user_input will let your user input their password
 # the password variable is hardcoded so you can see if it matches with your user_input
-user_input = input("What is your password?\n")
-password = "qwerty123"
-
-# if the user input matches the password, it will state you have successfully logged in
-# else it will print password failure and a#sk for another input.
-# user guesses will count the amount of times you attempty a password
-# after 3 guesses (remember Python starts at 0), the loop will end and System Failure will be printed.
-user_guesses = 0
-
-while user_guesses < 2:
-    if user_input == password:
-        print("You have successfully logged in.")
-        break
-    else:
-        print("PASSWORD FAILURE\n")
-        user_input = input("What is your password?\n")
-        user_guesses += 1
-
-if user_guesses == 2:
-  print("PASSWORD FAILURE\n")
-  print("System Failure - You have entered 3 incorrect passwords.")
+  user_input = input("What is your password?\n")
+  password = "qwerty123"
+  
+  # if the user input matches the password, it will state you have successfully logged in
+  # else it will print password failure and a#sk for another input.
+  # user guesses will count the amount of times you attempty a password
+  # after 3 guesses (remember Python starts at 0), the loop will end and System Failure will be printed.
+  user_guesses = 0
+  
+  while user_guesses < 2:
+      if user_input == password:
+          print("You have successfully logged in.")
+          break
+      else:
+          print("PASSWORD FAILURE\n")
+          user_input = input("What is your password?\n")
+          user_guesses += 1
+  
+  if user_guesses == 2:
+    print("PASSWORD FAILURE\n")
+    print("System Failure - You have entered 3 incorrect passwords.")
